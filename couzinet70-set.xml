@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="couzinet70-jsbsim-set.xml"> -->
+<PropertyList include="couzinet70-yasim-set.xml">
+
+  <sim>
+
+    <description>Couzinet 70 - Arc en Ciel</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+
+  </sim>
+
+</PropertyList>
+

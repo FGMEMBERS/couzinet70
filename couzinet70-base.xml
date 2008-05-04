@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<!-- Couzinet 70  Arc en Ciel N 3 bis -->
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <startup>
+      <splash-texture>Aircraft/couzinet70/couzinet70-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path archive="y">Aircraft/couzinet70/Models/couzinet70.xml</path>
+    </model>
+
+    <sound>
+      <path archive="y">Aircraft/couzinet70/Sounds/couzinet70-sound.xml</path>
+    </sound>
+
+    <help>
+      <title>Couzinet 70 : Arc en Ciel</title>
+    </help>
+
+  </sim>
+  
+  <consumables>
+    <fuel>
+      <tank n="0">
+       <level-gal_us>200</level-gal_us>
+      </tank>
+      <tank n="1">
+        <level-gal_us>200</level-gal_us> 
+      </tank>
+      <tank n="2">
+        <level-gal_us>200</level-gal_us> 
+      </tank>
+    </fuel>
+  </consumables>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="2">
+        <magnetos>3</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine>
+      <rpm type="double">10</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">10</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">10</rpm>
+    </engine>
+  </engines>
+
+
+  <nasal>
+    <doors>
+      <file>Aircraft/couzinet70/Nasal/doors.nas</file>
+    </doors>
+  </nasal>
+
+  <input>
+    <keyboard include="Nasal/couzinet70-keyboard.xml">
+    </keyboard>
+  </input>
+
+</PropertyList>

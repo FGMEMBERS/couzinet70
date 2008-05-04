@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList include="couzinet70-base.xml">
+
+  <sim>
+    <description>Couzinet 70 : Arc en Ciel (YASim)</description>    
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <status>Beta 0.2</status>
+    <aircraft-version>0.2</aircraft-version>
+    <flight-model>yasim</flight-model>
+    <aero>couzinet70-yasim</aero>
+  </sim>
+  
+</PropertyList>
