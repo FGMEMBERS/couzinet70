@@ -56,6 +56,51 @@
     <object-name>propdiscD</object-name>
   </animation>
 
+  <model>
+    <path>Aircraft/couzinet70/Models/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <x-m> -5.602 </x-m>
+      <y-m> -0.435 </y-m>
+      <z-m>  0.408 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -5.601 </x-m>
+      <y-m> -0.327 </y-m>
+      <z-m>  0.408 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m> -0.159 </y-m>
+      <z-m>  0.501 </z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m> -0.051 </y-m>
+      <z-m>  0.501 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Instruments/rpm/rpm3.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m>  0.056 </y-m>
+      <z-m>  0.501 </z-m>
+    </offsets>
+  </model>
 
   <!-- L'hélice centrale --> 
   <animation>
