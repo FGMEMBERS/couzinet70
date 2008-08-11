@@ -12,18 +12,40 @@
 
     <model>
       <path archive="y">Aircraft/couzinet70/Models/couzinet70.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <sound>
       <path archive="y">Aircraft/couzinet70/Sounds/couzinet70-sound.xml</path>
     </sound>
 
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
     <help>
       <title>Couzinet 70 : Arc en Ciel</title>
     </help>
 
+    <menubar include="Dialogs/couzinet70-menu.xml"/>
+
   </sim>
-  
+
+  <input>
+    <keyboard include="Nasal/couzinet70-keyboard.xml">
+    </keyboard>
+  </input>
+
   <consumables>
     <fuel>
       <tank n="0">
@@ -64,16 +86,13 @@
     </engine>
   </engines>
 
-
   <nasal>
     <doors>
       <file>Aircraft/couzinet70/Nasal/doors.nas</file>
     </doors>
+    <couzinet70>
+      <file>Aircraft/couzinet70/Nasal/liveries.nas</file>
+    </couzinet70>
   </nasal>
-
-  <input>
-    <keyboard include="Nasal/couzinet70-keyboard.xml">
-    </keyboard>
-  </input>
 
 </PropertyList>

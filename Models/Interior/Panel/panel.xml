@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <x-m> -5.602 </x-m>
+      <y-m> -0.435 </y-m>
+      <z-m>  0.408 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -5.601 </x-m>
+      <y-m> -0.327 </y-m>
+      <z-m>  0.408 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m> -0.159 </y-m>
+      <z-m>  0.501 </z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m> -0.051 </y-m>
+      <z-m>  0.501 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m>  0.056 </y-m>
+      <z-m>  0.501 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

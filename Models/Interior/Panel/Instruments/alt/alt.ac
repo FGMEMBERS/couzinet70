@@ -1,8 +1,8 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "ac3dmat1.002" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.5 0.5 0.5 shi 10 trans 0
-MATERIAL "Noneai_face.rgb" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Nonevisse.rgb" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Nonevisse.png" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.5
 OBJECT world
 kids 12
@@ -10,7 +10,7 @@ OBJECT poly
 name "Face"
 data 4
 Mesh
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 29
@@ -199,7 +199,7 @@ OBJECT poly
 name "Fond"
 data 8
 Fond.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 213
@@ -2574,7 +2574,7 @@ OBJECT poly
 name "PressureDial"
 data 8
 Mesh.016
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -2714,7 +2714,7 @@ OBJECT poly
 name "visse1.001"
 data 10
 visse1.002
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -4900,7 +4900,7 @@ OBJECT poly
 name "visse2.001"
 data 10
 visse2.002
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -7086,7 +7086,7 @@ OBJECT poly
 name "visse3.001"
 data 10
 visse3.002
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -9272,7 +9272,7 @@ OBJECT poly
 name "visse4.001"
 data 10
 visse4.002
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -11458,7 +11458,7 @@ OBJECT poly
 name "vitre"
 data 9
 vitre.001
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 290

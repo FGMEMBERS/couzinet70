@@ -6,10 +6,18 @@
 
  <path>couzinet70.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/couzinet70/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>interieur</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceC</object-name>
     <object-name>heliceD</object-name>
@@ -28,12 +36,8 @@
     <object-name>tourvitres</object-name>
     <object-name>echappe</object-name>
     <object-name>caches</object-name>
-    <object-name>cabine1</object-name>
-    <object-name>cabine2</object-name>
-    <object-name>tbl</object-name>
     <object-name>echappe</object-name>
     <object-name>moteurs</object-name>
-
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -56,51 +60,44 @@
     <object-name>propdiscD</object-name>
   </animation>
 
-  <model>
-    <path>Aircraft/couzinet70/Models/Instruments/attitude/attitude.xml</path>
-    <offsets>
-      <x-m> -5.602 </x-m>
-      <y-m> -0.435 </y-m>
-      <z-m>  0.408 </z-m>
-    </offsets>
-  </model>
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>heliceG</object-name>
+    <object-name>heliceC</object-name>
+    <object-name>heliceD</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolC</object-name>
+    <object-name>bolD</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>derive</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>tourvitres</object-name>
+    <object-name>echappe</object-name>
+    <object-name>caches</object-name>
+    <object-name>echappe</object-name>
+    <object-name>moteurs</object-name>
 
-  <model>
-    <path>Aircraft/couzinet70/Models/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> -5.601 </x-m>
-      <y-m> -0.327 </y-m>
-      <z-m>  0.408 </z-m>
-    </offsets>
-  </model>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
 
+  <!-- Interieur -->
   <model>
-    <path>Aircraft/couzinet70/Models/Instruments/rpm/rpm1.xml</path>
+    <path>Aircraft/couzinet70/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> -5.600 </x-m>
-      <y-m> -0.159 </y-m>
-      <z-m>  0.501 </z-m>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
     </offsets>
-  </model>
-
-
-  <model>
-    <path>Aircraft/couzinet70/Models/Instruments/rpm/rpm2.xml</path>
-    <offsets>
-      <x-m> -5.600 </x-m>
-      <y-m> -0.051 </y-m>
-      <z-m>  0.501 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/couzinet70/Models/Instruments/rpm/rpm3.xml</path>
-    <offsets>
-      <x-m> -5.600 </x-m>
-      <y-m>  0.056 </y-m>
-      <z-m>  0.501 </z-m>
-    </offsets>
-  </model>
+  </model> -->
 
   <!-- L'hélice centrale --> 
   <animation>
