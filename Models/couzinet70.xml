@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Couzinet 70 - Arc en Ciel by BARANGER Emmanuel -->
 
@@ -128,7 +128,7 @@
       <y-m> 0.0 </y-m>
       <z-m> 0.0 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- L'hélice centrale --> 
   <animation>
