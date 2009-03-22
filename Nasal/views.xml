@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -11,9 +11,9 @@
     <config>
       <from-model type="bool">true</from-model>
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-      <x-offset-m archive="y">  0.332 </x-offset-m>	<!-- Right -->
-      <y-offset-m archive="y">  0.681 </y-offset-m>	<!-- Up    -->
-      <z-offset-m archive="y"> -5.100 </z-offset-m>	<!-- Back  -->
+      <x-offset-m archive="y">  0.358 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y">  0.664 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y"> -5.188 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg>0</pitch-offset-deg>
       <heading-offset-deg type="double">0</heading-offset-deg> <!-- inside its window -->
     </config>
@@ -53,10 +53,11 @@
     <name>Pilot View</name>
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y"> -0.332 </x-offset-m>	<!-- Right -->
-      <y-offset-m archive="y">  0.681 </y-offset-m>	<!-- Up    -->
-      <z-offset-m archive="y"> -5.100 </z-offset-m>	<!-- Back  -->
-      <pitch-offset-deg> 0.00 </pitch-offset-deg>
+      <x-offset-m archive="y"> -0.358 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y">  0.664 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y"> -5.188 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg>80</default-field-of-view-deg>
     </config>
   </view>
 
