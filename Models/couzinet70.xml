@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Couzinet 70 - Arc en Ciel by BARANGER Emmanuel -->
-
 <PropertyList>
 
  <path>couzinet70.ac</path>
@@ -39,6 +38,7 @@
     <object-name>echappe</object-name>
     <object-name>moteurs</object-name>
     <object-name>pitot</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -92,6 +92,7 @@
     <object-name>echappe</object-name>
     <object-name>moteurs</object-name>
     <object-name>pitot</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -127,13 +128,30 @@
 -->
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/couzinet70/Models/shadow.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/couzinet70/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -197,9 +215,9 @@
       <z-m> -0.092 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -263,9 +281,9 @@
       <z-m> -0.409 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -329,9 +347,9 @@
       <z-m> -0.409 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -340,7 +358,7 @@
     <type>rotate</type>
     <object-name>aileronG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor>-20</factor>
     <axis>
       <x1-m>  -1.988 </x1-m>
       <y1-m>  -6.994 </y1-m>
@@ -355,7 +373,7 @@
     <type>rotate</type>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor>-20</factor>
     <axis>
       <x1-m> -2.310 </x1-m>
       <y1-m> 10.966 </y1-m>
@@ -370,17 +388,17 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>controls/flight/elevator</property>
-    <factor> 20.0 </factor>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 20 </factor>
     <center>
       <x-m> 5.820 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.846</z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -388,71 +406,117 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>controls/flight/rudder</property>
-    <factor> 20.0 </factor>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 20 </factor>
     <center>
       <x-m> 6.449 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 1.157 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
   <!-- Rotation des roues lors du roulage -->
- <animation>
-  <type>spin</type>
-  <object-name>roueG</object-name>
-  <property>gear/gear[0]/rollspeed-ms</property>
-  <factor>30</factor>
-  <center>
-   <x-m> -3.991 </x-m>
-   <y-m> -3.589 </y-m>
-   <z-m> -1.431 </z-m>
-  </center>
-  <axis>
-    <x>  0.000 </x>
-    <y> -1.000 </y>
-    <z>  0.000 </z>
-  </axis>
- </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor>30</factor>
+    <center>
+      <x-m> -3.991 </x-m>
+      <y-m> -3.589 </y-m>
+      <z-m> -1.431 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>spin</type>
-  <object-name>roueD</object-name>
-  <property>gear/gear[1]/rollspeed-ms</property>
-  <factor>30</factor>
-  <center>
-   <x-m> -3.991 </x-m>
-   <y-m>  3.589 </y-m>
-   <z-m> -1.431 </z-m>
-  </center>
-  <axis>
-    <x>  0.000 </x>
-    <y> -1.000 </y>
-    <z>  0.000 </z>
-  </axis>
- </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor>30</factor>
+    <center>
+      <x-m> -3.991 </x-m>
+      <y-m>  3.589 </y-m>
+      <z-m> -1.431 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>spin</type>
-  <object-name>roueA</object-name>
-  <property>gear/gear[2]/rollspeed-ms</property>
-  <factor>30</factor>
-  <center>
-   <x-m>  5.990 </x-m>
-   <y-m>  0.000 </y-m>
-   <z-m> -0.244 </z-m>
-  </center>
-  <axis>
-    <x>  0.000 </x>
-    <y> -1.000 </y>
-    <z>  0.000 </z>
-  </axis>
- </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor>30</factor>
+    <center>
+      <x-m>  5.990 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.244 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/couzinet70/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 6.442 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.899 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  -3.499 </x-m>
+      <y-m> -14.822 </y-m>
+      <z-m>   0.265 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -3.499 </x-m>
+      <y-m> 14.822 </y-m>
+      <z-m>  0.265 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m>  -3.399 </x-m>
+      <y-m> -14.822 </y-m>
+      <z-m>   0.265 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -3.399 </x-m>
+      <y-m> 14.822 </y-m>
+      <z-m>  0.265 </z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
 

@@ -92,6 +92,7 @@
     </doors>
     <couzinet70>
       <file>Aircraft/couzinet70/Nasal/liveries.nas</file>
+      <file>Aircraft/couzinet70/Nasal/light.nas</file>
     </couzinet70>
   </nasal>
 
