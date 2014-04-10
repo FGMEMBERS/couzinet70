@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Cranking effects -->
+  <!-- Left  -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Effects/cranking/crankingC.xml</path>
+    <offsets>
+      <x-m> -7.00093 </x-m>
+      <y-m> -0.26814 </y-m>
+      <z-m> -0.35504 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Effects/cranking/crankingC.xml</path>
+    <offsets>
+      <x-m> -6.70093 </x-m>
+      <y-m> -0.33988 </y-m>
+      <z-m> -0.42106 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/couzinet70/Models/Effects/cranking/crankingC.xml</path>
+    <offsets>
+      <x-m> -6.40093 </x-m>
+      <y-m> -0.40641 </y-m>
+      <z-m> -0.52381 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Effects/cranking/crankingC.xml</path>
+    <offsets>
+      <x-m> -7.00093 </x-m>
+      <y-m>  0.26814 </y-m>
+      <z-m> -0.35504 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Effects/cranking/crankingC.xml</path>
+    <offsets>
+      <x-m> -6.70093 </x-m>
+      <y-m>  0.33988 </y-m>
+      <z-m> -0.42106 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Effects/cranking/crankingC.xml</path>
+    <offsets>
+      <x-m> -6.40093 </x-m>
+      <y-m>  0.40641 </y-m>
+      <z-m> -0.52381 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

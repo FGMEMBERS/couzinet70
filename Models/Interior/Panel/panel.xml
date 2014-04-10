@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,55 +7,170 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>panel</object-name>
-
+    <object-name>rebord</object-name>
+    
     <!-- Objets transparents -->
   </animation>
 
+  <!-- FLIGHT CONTROLER -->
   <model>
-    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/vion/vion.xml</path>
     <offsets>
-      <x-m> -5.602 </x-m>
-      <y-m> -0.435 </y-m>
-      <z-m>  0.408 </z-m>
+      <x-m>  0.000  </x-m>
+      <y-m> -0.284 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/vion/vion.xml</path>
+    <offsets>
+      <x-m>  0.000  </x-m>
+      <y-m> -0.164 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TACHMETER -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/tach/tach2.xml</path>
+    <offsets>
+      <x-m> -0.00152 </x-m>
+      <y-m> -0.04900 </y-m>
+      <z-m>  0.07900 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/tach/tach1.xml</path>
+    <offsets>
+      <x-m> -0.00152 </x-m>
+      <y-m>  0.02600 </y-m>
+      <z-m>  0.07900 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/tach/tach3.xml</path>
+    <offsets>
+      <x-m> -0.00152 </x-m>
+      <y-m>  0.10100 </y-m>
+      <z-m>  0.07900 </z-m>
     </offsets>
   </model>
 
+  <!-- ALTITTUDE -->  
   <model>
     <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m> -5.601 </x-m>
-      <y-m> -0.327 </y-m>
-      <z-m>  0.408 </z-m>
+      <x-m> -0.001 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m> -0.165 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ATTITUDE -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m> -0.402 </y-m>
+      <z-m> -0.061 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OIL -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/oil/oilL.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.180 </y-m>
+      <z-m> -0.035 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/oil/oilC.xml</path>
     <offsets>
-      <x-m> -5.600 </x-m>
-      <y-m> -0.159 </y-m>
-      <z-m>  0.501 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.247 </y-m>
+      <z-m> -0.035 </z-m>
     </offsets>
   </model>
-
-
+  
   <model>
-    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/oil/oilR.xml</path>
     <offsets>
-      <x-m> -5.600 </x-m>
-      <y-m> -0.051 </y-m>
-      <z-m>  0.501 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.314 </y-m>
+      <z-m> -0.035 </z-m>
     </offsets>
   </model>
 
+  <!-- Plaque -->  
   <model>
-    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/plaque/plaque.xml</path>
     <offsets>
-      <x-m> -5.600 </x-m>
-      <y-m>  0.056 </y-m>
-      <z-m>  0.501 </z-m>
+      <x-m>  0.00220 </x-m>
+      <y-m>  0.42489 </y-m>
+      <z-m> -0.05505 </z-m>
     </offsets>
   </model>
-
+  
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.180 </y-m>
+      <z-m> -0.168 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/fuel/fuel2.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.247 </y-m>
+      <z-m> -0.168 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/fuel/fuel3.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.314 </y-m>
+      <z-m> -0.168 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL PRESS -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/fuelpress/fuelpressC.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m>  0.180 </y-m>
+      <z-m> -0.099 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/fuelpress/fuelpressL.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m>  0.247 </y-m>
+      <z-m> -0.099 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/Instruments/fuelpress/fuelpressR.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m>  0.314 </y-m>
+      <z-m> -0.099 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

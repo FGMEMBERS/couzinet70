@@ -1,52 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList>
+<PropertyList> 
 
- <path>attitude.ac</path>
+  <path>attitude.ac</path>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>fond</object-name>
+    <object-name>fond2</object-name>
     <object-name>face</object-name>
+    <object-name>visses</object-name>
 
+    <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/couzinet70/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
+  </effect>
+  
+  <animation> 
     <type>material</type>
+    <object-name>fond2</object-name>
     <object-name>face</object-name>
     <emission>
-      <red>   0.030 </red>
-      <green> 0.015 </green>
-      <blue>  0.005 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
-  <animation>
+  <animation> 
     <type>rotate</type>
     <object-name>face</object-name>
-    <property>/instrumentation/attitude-indicator/indicated-roll-deg</property>
-    <center>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.005 </y-m>
-      <z-m> -0.000 </z-m>
-    </center>
-    <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
+    <property>orientation/roll-deg</property>
+    <factor>1</factor>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

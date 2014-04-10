@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Couzintet 70 - Arc en Ciel 
-     BARANGER Emmanuel - 2008 -->
+BARANGER Emmanuel - 2008 -->
 
 <airplane mass="16490">
-
+  
   <approach speed="60" aoa="10">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
@@ -13,7 +13,7 @@
     <control-setting axis="/controls/engines/engine[2]/throttle" value="0.4"/>
     <control-setting axis="/controls/engines/engine[2]/mixture" value="1.0"/>
   </approach>
-
+  
   <cruise speed="127" alt="12000">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
@@ -22,11 +22,11 @@
     <control-setting axis="/controls/engines/engine[2]/throttle" value="1.0"/>  
     <control-setting axis="/controls/engines/engine[2]/mixture" value="1.0"/>  
   </cruise>
-
+  
   <cockpit x="5.100" y="0.332" z="0.681"/>
-
+  
   <fuselage ax="7.691" ay="0" az="-0.092" bx="-7.866" by="0" bz="0.969" width="1.5" taper="0.5" midpoint="0.25"/>
-
+  
   <wing x="2.863" y="0.754" z="-0.148" 
         chord="3.771" 
         length="14.10" 
@@ -36,14 +36,14 @@
         sweep="-2">
         <stall aoa="14" width="6" peak="1.5"/> 
         <flap1 start="0.445" end="0.729" lift="1.2" drag="1.2"/>
-      
+    
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
-      
+    
         <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
   </wing>
-
+  
   <hstab x="-5.595" y="0.0" z="0.892" 
          length="4.408"
          chord="2.665"
@@ -51,30 +51,29 @@
          taper=".18">
          <stall aoa="18" width="3" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
-
+    
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
-
+    
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   </hstab>
-
+  
   <vstab x="-6.910" y="0" z="0.236"
          length="1.872"
          chord="2.0"
          taper="1">
          <stall aoa="14" width="3" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
-
+    
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
- 
+    
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
-
-  <!-- 3 Hispano Suiza : 650 cv
-                         525 kg (1157 lbs)
-  -->
   
+  <!-- 3 Hispano Suiza : 650 cv
+  525 kg (1157 lbs)
+  -->
   <!-- Center engine -->
   <propeller x="6.714" y="0.00" z="0.201"
              radius="1.5" 
@@ -85,21 +84,18 @@
              cruise-speed="127"
              cruise-rpm="1200"
              gear-ratio="0.62">
-             
              <actionpt x="7.430" y="0" z="-0.092"/>
-             
              <piston-engine eng-power="650"
                             eng-rpm="1950"
                             turbo-mul="1.4"
                             wastegate-mp="61">
-                            
-                            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
-                            <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
-                            <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
-            </piston-engine>
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+             </piston-engine>
   </propeller>
-
+  
   <!-- Left engine -->
   <propeller x="5.097" y="2.684" z="-0.104"
              radius="1.5" 
@@ -110,21 +106,18 @@
              cruise-speed="127"
              cruise-rpm="1200"
              gear-ratio="0.62">
-             
              <actionpt x="5.803" y="2.691" z="-0.409"/>
-             
              <piston-engine eng-power="650"
                             eng-rpm="1950"
                             turbo-mul="1.4"
                             wastegate-mp="61">
-                            
-                            <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
-                            <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
-                            <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
-            </piston-engine>
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[1]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[1]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[1]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[1]/mixture"/>
+             </piston-engine>
   </propeller>
-
+  
   <!-- Right engine -->
   <propeller x="5.097" y="-2.684" z="-0.104"
              radius="1.5" 
@@ -135,21 +128,18 @@
              cruise-speed="127"
              cruise-rpm="1200"
              gear-ratio="0.62">
-             
              <actionpt x="5.803" y="-2.691" z="-0.409"/>
-             
              <piston-engine eng-power="650"
                             eng-rpm="1950"
                             turbo-mul="1.4"
-                            wastegate-mp="61">
-                            
-                            <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[2]/starter" control="STARTER"/>
-                            <control-input axis="/controls/engines/engine[2]/magnetos" control="MAGNETOS"/>
-                            <control-input axis="/controls/engines/engine[2]/mixture" control="MIXTURE"/>
-            </piston-engine>
+                            wastegate-mp="61">  
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[2]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[2]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[2]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[2]/mixture"/>
+             </piston-engine>
   </propeller>
-
+  
   <!-- Left wheel -->
   <gear x="3.991" y="3.589" z="-1.863"
         compression="0.3"
@@ -158,7 +148,7 @@
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   </gear>
-
+  
   <!-- Right wheel -->
   <gear x="3.991" y="-3.589" z="-1.863"
         compression="0.3"
@@ -167,18 +157,18 @@
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
   </gear>
-
+  
   <!-- Tail wheel; has castering selectable by a wheel lock -->
   <gear x="-5.990" y="0.0" z="-0.452"
         compression="0.2">
         <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1"  dst0="1" dst1="0" control="CASTERING"/>
   </gear>
-
+  
   <!-- Fuel -->
   <tank x="3.9" y="2.684" z="-0.104" capacity="201"/>
   <tank x="3.9" y="-2.684" z="-0.104" capacity="201"/>
-
+  
   <!-- CG theorique x=2.863 y=0.0 z=-0.148 -->
   <ballast x="5.6" y="0.0" z="-2.3" mass="2000"/>
-
+  
 </airplane>
