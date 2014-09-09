@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>cabine</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/couzinet70/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+  </effect>
+  
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.415 </x-m>
+      <y-m> -0.357 </y-m>
+      <z-m>  0.124 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/couzinet70/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -5.60190 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.48194 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

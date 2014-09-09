@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>vion.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>tour</object-name>
+    <object-name>cache</object-name>
+    <object-name>cache2</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>molette</object-name>
+    <object-name>ball</object-name>
+    <object-name>virage</object-name>
+    <object-name>vsi</object-name>
+
+    <object-name>clino</object-name>
+    <object-name>vitre</object-name>
+    <object-name>tube</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/couzinet70/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+    <object-name>tube</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>cache</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>virage</object-name>
+    <object-name>vsi</object-name>
+    <object-name>clino</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0.00 </ind><dep>   0 </dep></entry> <!--   0 km/h -->
+      <entry><ind>  54.00 </ind><dep>  24 </dep></entry> <!-- 100 km/h -->
+      <entry><ind> 107.99 </ind><dep>  83 </dep></entry> <!-- 200 km/h -->
+      <entry><ind> 161.99 </ind><dep> 174 </dep></entry> <!-- 300 km/h -->
+      <entry><ind> 215.98 </ind><dep> 287 </dep></entry> <!-- 400 km/h -->
+      <entry><ind> 248.38 </ind><dep> 362 </dep></entry> <!-- 460 km/h -->
+      <entry><ind> 269.98 </ind><dep> 415 </dep></entry> <!-- 500 km/h -->
+      <entry><ind> 291.58 </ind><dep> 470 </dep></entry> <!-- 540 km/h -->
+      <entry><ind> 313.18 </ind><dep> 525 </dep></entry> <!-- 580 km/h -->
+      <entry><ind> 334.77 </ind><dep> 580 </dep></entry> <!-- 620 km/h -->
+      <entry><ind> 356.37 </ind><dep> 635 </dep></entry> <!-- 660 km/h -->
+      <entry><ind> 377.97 </ind><dep> 692 </dep></entry> <!-- 700 km/h -->
+    </interpolation>
+    <center>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.016 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!--  Bille  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ball</object-name>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <min> -1.1 </min>
+    <max>  1.1 </max>
+    <interpolation>
+      <entry><ind> -1.1 </ind><dep> -4.78 </dep></entry>
+      <entry><ind>  1.1 </ind><dep>  4.78 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.22 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!--  Virage  -->
+  <animation>
+    <type>translate</type>
+    <object-name>virage</object-name>
+    <property>orientation/roll-deg</property>
+    <min> -60 </min>
+    <max>60 </max>
+    <interpolation>
+      <entry><ind> -60 </ind><dep> -0.022 </dep></entry>
+      <entry><ind>  60 </ind><dep>  0.022 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.22 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- V verticale  --> 
+  <animation>
+    <type>translate</type>
+    <object-name>vsi</object-name>
+    <property>autopilot/internal/vert-speed-fpm</property>
+    <min> -3937 </min>
+    <max>  6561 </max>
+    <interpolation>
+      <entry><ind> -3937 </ind><dep> -0.0165 </dep></entry>
+      <entry><ind>  6561 </ind><dep>  0.0275 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <!--   Clinomètre  -->
+  <animation>
+    <type>scale</type>
+    <object-name>clino</object-name>
+    <property>orientation/pitch-deg</property>
+    <min> -15 </min>
+    <max>  15 </max>
+    <interpolation>
+      <entry><ind> -15 </ind><dep> 0.23 </dep></entry>
+      <entry><ind>  15 </ind><dep> 1.82 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00099 </x-m>
+      <y-m>  0.04292 </y-m>
+      <z-m> -0.03755 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
